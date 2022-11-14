@@ -56,7 +56,6 @@ function renderTF() {
         for (let j = 0; j < stores.length; j++) {
             hourCookies += stores[j].hourlyCookieSales[i];
             cookiesTotal += stores[j].hourlyCookieSales[i];
-
         };
 
         let hoursTotal = document.createElement('td');

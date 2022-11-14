@@ -1,0 +1,26 @@
+* {
+    background-color: #f8bd98;
+    color: #1c626d;
+}
+
+table, td, tr, th {
+    border: solid 1px #1c626d;
+}
+
+table {
+    border-spacing: 0px;
+    font-size: 25px;
+}
+
+td, tr, th {
+    padding: 9px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #64b5c2;
+}
