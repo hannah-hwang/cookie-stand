@@ -103,3 +103,17 @@ location3.render();
 location4.render();
 location5.render();
 renderTF();
+
+let standForm = document.getElementById('standForm');
+standForm.addEventListener('submit', addStand);
+
+function addStand(event) {
+    event.preventDefault();
+    let form = event.target;
+    let store = form.standLocation.value;
+    let minCustomer = form.standMin.value;
+    let maxCustomer = form.standMax.value;
+    let avgCookieSale = form.standAvg.value;
+    let location = new Location(store, minCustomer, maxCustomer, avgCookieSale);
+    location.render();
+}

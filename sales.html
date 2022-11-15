@@ -25,8 +25,29 @@
         </tfoot>
     </table>
 
-    <script src="js/app.js"></script>
+    <form id="standForm">
+        <fieldset>
+            <legend>Enter Cookie Stand Information:</legend>
+            <label>
+                Location:
+                <input type="text" name="standLocation" required>
+            </label>
+            <label>
+                Minimum Customers Per Day:
+                <input type="number" name="standMin" required step="1" min="1">
+            </label>
+            <label>
+                Maximun Customers Per Day:
+                <input type="number" name="standMax" required step="1" min="1">
+            </label>
+            Average Customers Per Day:
+            <input type="number" name="standAvg" required step="1" min="1">
+            <button type="submit">Submit Stand</button>
+        </fieldset>
+    </form>
 
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
