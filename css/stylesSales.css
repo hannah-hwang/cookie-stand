@@ -1,9 +1,12 @@
-* {
-    background-color: #f8bd98;
+body {
+    background: #f8bd98;
     color: #1c626d;
 }
 
-table, td, tr, th {
+table,
+td,
+tr,
+th {
     border: solid 1px #1c626d;
 }
 
@@ -12,15 +15,43 @@ table {
     font-size: 25px;
 }
 
-td, tr, th {
+td,
+tr,
+th {
     padding: 9px;
     text-align: center;
 }
 
 a {
     text-decoration: none;
+    color: #1c626d;
 }
+
 
 a:hover {
     color: #64b5c2;
+}
+
+fieldset {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 2rem;
+    padding: 20px;
+    background: #f1cfc9;
+    border-radius: 5px;
+}
+
+input {
+    margin-top: 6px;
+    background: white;
+}
+
+button {
+    margin-top: 6px;
+    background: #1c626d;
+    color: #f7f9f9;
+    width: fit-content;
+    border-radius: 5px;
 }

@@ -95,15 +95,6 @@ let location5 = new Location('Lima', 2, 16, 4.6);
 
 let stores = [location1, location2, location3, location4, location5];
 
-renderTH();
-
-location1.render();
-location2.render();
-location3.render();
-location4.render();
-location5.render();
-renderTF();
-
 let standForm = document.getElementById('standForm');
 standForm.addEventListener('submit', addStand);
 
@@ -116,4 +107,12 @@ function addStand(event) {
     let avgCookieSale = form.standAvg.value;
     let location = new Location(store, minCustomer, maxCustomer, avgCookieSale);
     location.render();
-}
+};
+
+renderTH();
+location1.render();
+location2.render();
+location3.render();
+location4.render();
+location5.render();
+renderTF();

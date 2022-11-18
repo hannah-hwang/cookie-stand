@@ -1,6 +1,24 @@
+/* colors: */
+/* #1c626d; */
+/* #f8bd98; */
+
 * {
-    background-color: #f8bd98;
     color: #1c626d;
+}
+
+body {
+    background: #white;
+    ;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #2f636b;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h1,
@@ -10,39 +28,62 @@ p {
 }
 
 h1 {
+    font-size: 3rem;
     letter-spacing: 3px;
-    margin: 2rem;
+    margin: 10px;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
 }
 
 nav {
+    background: #f8bd98;
+    height: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 2px -2px rgb(167, 166, 166);
 }
 
 a {
     text-decoration: none;
-    padding: 8px;
+    color: #1c626d;
+    margin-top: 5px;
+    font-size: 1.3rem;
 }
 
 a:hover {
     color: #64b5c2;
 }
 
-h2 {
-    margin-top: 3rem;
-}
-
-h3 {
-    margin-bottom: 0px;
-    margin-top: 3rem;
-}
-
 #salmon {
+    margin: 2rem;
     display: flex;
     justify-content: center;
 }
 
-#contact {
-    list-style: none;
-    margin-top: 0px;
+#welcomeMsg {
+    background: #f8bd98;
+    display: block;
+    border-radius: 10px;
+    height: 150px;
+    width: 70%;
+    margin: auto;
+}
+
+#content {
+    margin: 10px;
 }
