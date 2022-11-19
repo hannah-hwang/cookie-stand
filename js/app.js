@@ -106,7 +106,11 @@ function addStand(event) {
     let maxCustomer = form.standMax.value;
     let avgCookieSale = form.standAvg.value;
     let location = new Location(store, minCustomer, maxCustomer, avgCookieSale);
+    stores.push(location);
     location.render();
+
+    tableFoot.innerHTML = "";
+    renderTF();
 };
 
 renderTH();
