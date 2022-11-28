@@ -7,25 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stylesSales.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <title>Cookie Sales</title>
 </head>
 
 <body>
-    <a href="index.html">Back to Home</a>
-    <h1>Daily Cookie Sales</h1>
-    <!-- <p id="cookie">
-
-    </p> -->
+    <header>
+        <div>
+            <h1>PAT'S SALMON COOKIES</h1>
+        </div>
+        <div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="/">Merchandise</a>
+                <a href="/">Place an Order</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+<div id="tableContainer">
+    <h2>Daily Cookie Sales</h2>
     <table>
         <thead id="tableHead">
         </thead>
         <tbody id="tableBody">
         </tbody>
         <tfoot id="tableFoot">
-
+            
         </tfoot>
     </table>
-
+</div>
+    
     <form id="standForm">
         <fieldset>
             <legend>Enter Cookie Stand Information:</legend>
@@ -35,20 +47,25 @@
             </label>
             <label>
                 Minimum Customers Per Day:
-                <input type="number" name="standMin" required step="1" min="1">
-            </label>
-            <label>
-                Maximun Customers Per Day:
-                <input type="number" name="standMax" required step="1" min="1">
-            </label>
-            <label>
-                Average Customers Per Day:
-                <input type="number" name="standAvg" required step="1" min="1">
-            </label>
-            <button type="submit">Submit Stand</button>
-        </fieldset>
-    </form>
-
+                    <input type="number" name="standMin" required step="1" min="1">
+                </label>
+                <label>
+                    Maximun Customers Per Day:
+                    <input type="number" name="standMax" required step="1" min="1">
+                </label>
+                <label>
+                    Average Customers Per Day:
+                    <input type="number" name="standAvg" required step="1" min="1">
+                </label>
+                <button type="submit">Submit Stand</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p id="copyright">
+            &copy PAT'S SALMON COOKIES CO.
+        </p>
+    </footer>
 
     <script src="js/app.js"></script>
 </body>

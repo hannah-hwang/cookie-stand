@@ -1,6 +1,70 @@
-body {
-    background: #f8bd98;
+/* body {
+    background: white;
     color: #1c626d;
+    text-align: center;
+} */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1c626d;
+    background: #95aeb2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    background: #2f636b;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    background: #f8bd98;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 2px -2px rgb(139, 139, 139);
+}
+
+h1 {
+    font-family: 'Nerko One';
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+    margin: 10px;
+    color: white;
+}
+
+main {
+    margin: 1rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#tableContainer {
+    width: 90%;
+    background: #f7ebe4;
+    border: 5px solid #f8bd98;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px -2px rgb(139, 139, 139);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 table,
@@ -13,6 +77,7 @@ th {
 table {
     border-spacing: 0px;
     font-size: 25px;
+    margin: 1rem;
 }
 
 td,
@@ -22,11 +87,20 @@ th {
     text-align: center;
 }
 
+th:nth-of-type(even) {
+    background: #95aeb2;
+}
+
+th:nth-of-type(odd) {
+    background: #1c626d;
+}
+
 a {
     text-decoration: none;
     color: #1c626d;
+    margin-top: 5px;
+    font-size: 1.3rem;
 }
-
 
 a:hover {
     color: #64b5c2;
@@ -39,8 +113,17 @@ fieldset {
     align-items: left;
     margin-top: 2rem;
     padding: 20px;
-    background: #f1cfc9;
-    border-radius: 5px;
+    background: #f7ebe4;
+    border: 5px solid #f8bd98;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px -2px rgb(139, 139, 139);
+}
+
+legend {
+    padding: 5px;
+    border: 3px solid #f8bd98;
+    border-radius: 10px;
+    background: #f7ebe4;
 }
 
 input {
@@ -49,9 +132,24 @@ input {
 }
 
 button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 6px;
     background: #1c626d;
     color: #f7f9f9;
     width: fit-content;
     border-radius: 5px;
+}
+
+
+footer {
+    height: 70px;
+    background: #1c626d;
+    margin-top: 1rem;
+}
+
+#copyright {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
 }
